@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  margin: 0;
+  font-family: PT Sans, sans-serif;
+  background-color: var(--dark-snow);
+}
+
+:root{
+  --white: #FFFFFF;
+  --snow: #F5F5F5;
+  --dark-snow: #E5E5E5;
+  --smoke: #8E8E8E;
+  --dark-smoke: #555555;
+  --dark-blue: #167ABC;
+  --light-grey: #00000033;
+
+  --shadow: 0px 0px 5px var(--light-grey);
+  --strong-shadow: 0px 4px 10px var(--light-grey);
+}

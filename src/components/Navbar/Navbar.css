@@ -1,0 +1,77 @@
+.navegador {
+  background-color: var(--white);
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_navegador{
+    width: 10%;
+    min-height: 30px;
+    min-width: 200px;
+    background-image: url(../../assets/objective.light.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container_info_usuario {
+  display: flex;
+  align-items: center;
+
+  .info_usuario {
+    display: flex;
+    align-items: center;
+    color: var(--dark-smoke);
+    gap: 8px;
+
+    h2 {
+      font-weight: 700;
+      font-size: 17px;
+      margin: 0;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 17px;
+      margin: 0;
+    }
+  }
+
+  .sigla_usuario {
+    width: 32px;
+    height: 32px;
+    background-color: var(--dark-snow);
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container_info_usuario {
+    .info_usuario {
+      display: grid;
+      text-align: right;
+
+      h2{
+        font-size: 15px;
+      }
+
+      p{
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+    .logo_navegador{
+        background-image: url(../../assets/favicon.svg);
+        min-width: 50px;
+    }
+}

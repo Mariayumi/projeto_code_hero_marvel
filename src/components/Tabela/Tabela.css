@@ -1,0 +1,70 @@
+.header_tabela {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 24px;
+
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--smoke);
+  }
+}
+
+.lista_tabela {
+  display: grid;
+  gap: 8px;
+  .item_tabela {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    padding: 20px 24px;
+    border-radius: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    .info_personagem {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .foto_personagem {
+        width: 48px;
+        height: 48px;
+        border-radius: 4px;
+        object-fit: cover;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--dark-smoke);
+      }
+    }
+
+    .info_serie {
+      display: grid;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--dark-smoke);
+    }
+
+    .info_evento {
+      display: grid;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--dark-smoke);
+    }
+  }
+
+  .item_tabela:hover {
+    box-shadow: var(--strong-shadow);
+    transition: 0.3s;
+  }
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit; 
+}

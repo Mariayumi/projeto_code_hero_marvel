@@ -1,0 +1,21 @@
+.paginacao_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 26px 0px;
+    gap: 16px;
+
+    button{
+        border: 1px solid var(--dark-snow);
+        background-color: var(--snow);
+        color: var(--dark-smoke);
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .pagina_ativa{
+        background-color: var(--dark-blue) !important;
+        color: var(--white)
+    }
+}

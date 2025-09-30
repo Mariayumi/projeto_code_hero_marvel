@@ -1,0 +1,53 @@
+.componente_input {
+  display: grid;
+  gap: 8px;
+  width: 40%;
+
+  .label_input {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--dark-smoke);
+  }
+
+  .corpo_input {
+    background-color: var(--white);
+    border: 1px solid var(--dark-snow);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+  }
+
+  .corpo_input:hover {
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+  }
+
+  .corpo_input:focus-whithin {
+    transition: 0.3s;
+    border: 1px solid var(--dark-smoke)
+  }
+
+  .icone_input {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.campo_input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-family: PT Sans, sans-serif;
+
+  font-size: 14px;
+  color: var(--dark-smoke);
+
+  &::placeholder {
+    color: var(--smoke);
+    font-weight: 400;
+    font-size: 14px;
+    font-style: italic;
+  }
+}

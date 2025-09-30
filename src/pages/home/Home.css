@@ -1,0 +1,11 @@
+.home {
+
+  .container_home {
+    h1 {
+      color: var(--texto);
+      text-align: left;
+      font-size: 32px;
+      font-weight: 700;
+    }
+  }
+}
