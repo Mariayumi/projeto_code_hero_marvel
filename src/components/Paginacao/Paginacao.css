@@ -1,11 +1,11 @@
-.paginacao_container{
-    width: 100%;
+.paginacao_container {
     display: flex;
     justify-content: center;
-    margin: 26px 0px;
+    padding: 26px 0px;
     gap: 16px;
+    background-color: var(--white);
 
-    button{
+    button {
         border: 1px solid var(--dark-snow);
         background-color: var(--snow);
         color: var(--dark-smoke);
@@ -14,8 +14,21 @@
         cursor: pointer;
     }
 
-    .pagina_ativa{
+    .pagina_ativa {
         background-color: var(--dark-blue) !important;
         color: var(--white)
+    }
+}
+
+@media (max-width: 800px) {
+    .paginacao_container {
+        gap: 8px;
+        button {
+            padding: 8px 12px;
+        }
+        .pagina_ativa {
+            background-color: var(--dark-blue) !important;
+            color: var(--white)
+        }
     }
 }

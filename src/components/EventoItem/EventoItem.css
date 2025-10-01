@@ -1,0 +1,52 @@
+.evento_item{
+  margin-bottom: 16px;
+  padding: 20px 24px;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+  background-color: var(--white);
+
+  h3{
+    margin: 0px;
+    font-size: 24px;
+  }
+}
+
+.botoes_evento{
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+
+  button{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover{
+      background-color: var(--orange);
+    }
+
+    &:disabled{
+      background-color: var(--smoke);
+      cursor: not-allowed;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .evento_item{
+    padding: 16px 20px;
+
+    h3{
+      font-size: 20px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+  }
+}

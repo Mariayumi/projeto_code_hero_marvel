@@ -57,6 +57,7 @@
     .info_usuario {
       display: grid;
       text-align: right;
+      gap: 0px;
 
       h2{
         font-size: 15px;

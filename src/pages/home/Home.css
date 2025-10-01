@@ -1,11 +1,38 @@
 .home {
+  display: grid;
+  justify-content: center;
 
-  .container_home {
-    h1 {
-      color: var(--texto);
-      text-align: left;
-      font-size: 32px;
-      font-weight: 700;
+  .home_content {
+    width: 80vw;
+
+
+    .container_home {
+      margin-bottom: 40px;
+      display: grid;
+      h1 {
+        color: var(--texto);
+        text-align: left;
+        font-size: 32px;
+        font-weight: 700;
+        margin: 0px;
+        padding: 24px 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home {
+    .home_content {
+      width: 90vw;
+      .container_home {
+        margin-bottom: 32px;
+        h1 {
+          text-align: center;
+          font-size: 24px;
+          padding: 16px 0px;
+        }
+      }
     }
   }
 }

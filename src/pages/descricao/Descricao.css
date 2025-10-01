@@ -1,0 +1,57 @@
+.descricao {
+  width: 80vw;
+  margin: 24px 0px;
+
+  .descricao_header {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    .img_personagem {
+      width: 100px;
+      height: 100px;
+      border-radius: 4px;
+      box-shadow: var(--shadow);
+    }
+
+    .descricao_texto {
+      h1 {
+        font-size: 50px;
+        margin: 0px;
+        font-weight: 700;
+      }
+      h4 {
+        margin: 0px;
+        font-weight: 400;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .descricao {
+    width: 90vw;
+    .descricao_header {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      .img_personagem {
+        width: 70px;
+        height: 70px;
+      }
+
+      .descricao_texto {
+        h1 {
+          font-size: 24px;
+          margin: 0px;
+          font-weight: 700;
+        }
+        h4 {
+          margin: 0px;
+          font-weight: 400;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
