@@ -1,11 +1,8 @@
 import React from 'react';
-
-interface seriesContentProps {
-  series: { resourceURI: string; name: string }[];
-}
+import type { seriesContentProps } from '../../../types/components/IModal';
 
 const seriesContent: React.FC<seriesContentProps> = ({ series }) => {
-  if (!series || series.length === 0) return <p>Nenhum criador encontrado.</p>;
+  if (!series || series.length === 0) return <p>Nenhuma série encontrada.</p>;
 
   return (
     <div className='descricao_modal_container'>

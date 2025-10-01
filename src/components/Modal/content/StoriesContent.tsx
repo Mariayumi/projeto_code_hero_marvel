@@ -1,11 +1,8 @@
 import React from 'react';
-
-interface StoriesContentProps {
-  stories: { resourceURI: string; name: string, type: string }[];
-}
+import type { StoriesContentProps } from '../../../types/components/IModal';
 
 const StoriesContent: React.FC<StoriesContentProps> = ({ stories }) => {
-  if (!stories || stories.length === 0) return <p>Nenhum criador encontrado.</p>;
+  if (!stories || stories.length === 0) return <p>Nenhuma storie encontrada.</p>;
 
   return (
     <div className='descricao_modal_container'>

@@ -1,11 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Paginacao.css"
-
-interface PaginacaoProps {
-    totalPaginas: number;
-    paginaAtual: number;
-    setPaginaAtual: (pagina: number) => void;
-}
+import type { PaginacaoProps } from "../../types/components/IPaginacao";
 
 function gerarPaginas(paginaAtual: number, totalPaginas: number, isMobile: boolean) {
     if (isMobile) {

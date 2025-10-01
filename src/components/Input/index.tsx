@@ -1,15 +1,6 @@
 import lupa from "../../assets/search.svg";
+import type { InputProps } from "../../types/components/IInput";
 import "./Input.css";
-
-export interface InputProps {
-  placeholder?: string;
-  value?: string;
-  onChange?: (value: string) => void;
-  type?: string;
-  label?: string;
-  id?: string;
-  pesquisa?: boolean;
-}
 
 export default function Input({
   label,

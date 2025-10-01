@@ -1,4 +1,4 @@
-import type { IItems, IThumbnail } from "./iPersonagem";
+import type { ICharacters, IComics, ICreators, ISeries, IStories, IThumbnail } from "./iPersonagem";
 
 export interface IListaEventos {
   offset: number;
@@ -18,11 +18,11 @@ export interface IEvento {
   start: string;
   end: string;
   thumbnail: IThumbnail;
-  comics: IItems;
-  stories: IItems;
-  series: IItems;
-  characters: IItems;
-  creators: IItems;
+  comics: IComics;
+  series: ISeries;
+  stories: IStories;
+  characters: ICharacters;
+  creators: ICreators;
   next: { resourceURI: string; name: string } | null;
   previous: { resourceURI: string; name: string } | null;
 }

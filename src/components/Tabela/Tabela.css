@@ -74,16 +74,6 @@ a {
   color: inherit;
 }
 
-
-
-.skeleton {
-  background-color: var(--smoke);
-  border-radius: 4px;
-  padding: 10px;
-  animation: pulse 1.5s infinite;
-  height: 10vh;
-}
-
 @keyframes pulse {
   0% {
     opacity: 1;

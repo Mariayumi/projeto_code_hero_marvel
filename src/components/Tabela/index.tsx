@@ -1,13 +1,7 @@
-import type { IListaPersonagens } from "../../types/iPersonagem";
 import "./Tabela.css";
 import { Link } from "react-router-dom";
 import type { IPersonagem } from "../../types/iPersonagem";
-
-interface TabelaProps {
-  data: IListaPersonagens;
-  erro?: boolean;
-  loading?: boolean;
-}
+import type { TabelaProps } from "../../types/components/ITabela";
 
 export default function Tabela({ data, erro, loading }: TabelaProps) {
   return (

@@ -1,22 +1,27 @@
-.evento_item{
+.comic_item {
   margin-bottom: 16px;
   padding: 20px 24px;
   border-radius: 4px;
   box-shadow: var(--shadow);
   background-color: var(--white);
 
-  h3{
+  h3 {
     margin: 0px;
     font-size: 24px;
   }
 }
 
-.botoes_evento{
+.comic_info{
+  display: flex;
+  gap: 16px;
+}
+
+.botoes_comic {
   display: flex;
   gap: 12px;
   margin-top: 16px;
 
-  button{
+  button {
     padding: 8px 12px;
     border: none;
     border-radius: 4px;
@@ -26,11 +31,11 @@
     cursor: pointer;
     transition: 0.3s ease;
 
-    &:hover{
+    &:hover {
       background-color: var(--orange);
     }
 
-    &:disabled{
+    &:disabled {
       background-color: var(--smoke);
       cursor: not-allowed;
     }
@@ -38,15 +43,19 @@
 }
 
 @media screen and (max-width: 800px) {
-  .evento_item{
+  .comic_item {
     padding: 16px 20px;
 
-    h3{
+    h3 {
       font-size: 20px;
     }
 
-    p{
-        font-size: 14px;
+    p {
+      font-size: 14px;
     }
+  }
+
+  .comic_info{
+    display: grid;
   }
 }

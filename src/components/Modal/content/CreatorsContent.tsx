@@ -1,8 +1,5 @@
 import React from 'react';
-
-interface CreatorsContentProps {
-  creators: { resourceURI: string; name: string, role: string }[];
-}
+import type { CreatorsContentProps } from '../../../types/components/IModal';
 
 const CreatorsContent: React.FC<CreatorsContentProps> = ({ creators }) => {
   if (!creators || creators.length === 0) return <p>Nenhum criador encontrado.</p>;
