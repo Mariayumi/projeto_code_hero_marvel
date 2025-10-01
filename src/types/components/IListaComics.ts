@@ -46,3 +46,8 @@ export type ModalState =
       title: "";
       data: [];
     };
+
+export interface ComicItemProps {
+  comic: IComics;
+  onOpenModal: (type: ModalType, title: string, data: ModalDataArray) => void;
+}

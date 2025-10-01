@@ -19,9 +19,9 @@ export default function Tabela({ data, erro, loading }: TabelaProps) {
           ))}
         </div>
       ) : erro ? (
-        <p>Ocorreu um erro ao carregar os dados.</p>
+        <p className="fallback">Ocorreu um erro ao carregar os dados.</p>
       ) : data.results.length === 0 ? (
-        <p>Nenhum personagem encontrado.</p>
+        <p className="fallback">Nenhum personagem encontrado.</p>
       ) : (
         <div className="lista_tabela">
           {data.results.map((personagem: IPersonagem) => (

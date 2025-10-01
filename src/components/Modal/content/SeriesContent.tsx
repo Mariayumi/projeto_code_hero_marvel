@@ -1,7 +1,6 @@
-import React from 'react';
 import type { seriesContentProps } from '../../../types/components/IModal';
 
-const seriesContent: React.FC<seriesContentProps> = ({ series }) => {
+export default function seriesContent({ series }: seriesContentProps) {
   if (!series || series.length === 0) return <p>Nenhuma série encontrada.</p>;
 
   return (
@@ -16,5 +15,3 @@ const seriesContent: React.FC<seriesContentProps> = ({ series }) => {
     </div>
   );
 };
-
-export default seriesContent;

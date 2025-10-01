@@ -3,7 +3,8 @@
   padding: 20px 24px;
   border-radius: 4px;
   box-shadow: var(--shadow);
-  background-color: var(--white);
+  background-color: var(--sub-background);
+  color: var(--texto);
 
   h3 {
     margin: 0px;
@@ -14,6 +15,7 @@
 .comic_info{
   display: flex;
   gap: 16px;
+  color: var(--subtexto);
 }
 
 .botoes_comic {

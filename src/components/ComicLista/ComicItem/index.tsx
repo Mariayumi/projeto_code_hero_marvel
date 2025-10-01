@@ -1,18 +1,7 @@
-import React from "react";
 import "./ComicItem.css";
-import type { ICreatorItem, IItem, ISerieItem, IStorieItem } from "../../../types/iPersonagem";
-import type { IComics } from "../../../types/iComic";
+import type { ComicItemProps } from "../../../types/components/IListaComics";
 
-type ModalType = "creators" | "series" | "stories";
-
-type ModalDataArray = IItem[] | ISerieItem[] | IStorieItem[] | ICreatorItem[];
-
-interface ComicItemProps {
-  comic: IComics;
-  onOpenModal: (type: ModalType, title: string, data: ModalDataArray) => void;
-}
-
-const ComicItem: React.FC<ComicItemProps> = ({ comic, onOpenModal }) => {
+export default function ComicItem({comic, onOpenModal}: ComicItemProps) {
   const handleOpenCreatorsModal = () => {
     if (comic.creators && comic.creators.items.length) {
       onOpenModal("creators", `Creators de '${comic.title}'`, comic.creators.items);
@@ -68,4 +57,3 @@ const ComicItem: React.FC<ComicItemProps> = ({ comic, onOpenModal }) => {
   );
 };
 
-export default ComicItem;

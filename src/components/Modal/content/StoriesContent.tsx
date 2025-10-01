@@ -1,7 +1,6 @@
-import React from 'react';
 import type { StoriesContentProps } from '../../../types/components/IModal';
 
-const StoriesContent: React.FC<StoriesContentProps> = ({ stories }) => {
+export default function StoriesContent({ stories }: StoriesContentProps) {
   if (!stories || stories.length === 0) return <p>Nenhuma storie encontrada.</p>;
 
   return (
@@ -18,4 +17,3 @@ const StoriesContent: React.FC<StoriesContentProps> = ({ stories }) => {
   );
 };
 
-export default StoriesContent;

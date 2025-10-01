@@ -4,6 +4,7 @@
 
   .descricao_content {
     width: 80vw;
+    color: var(--subtexto);
 
     .descricao_header {
       display: flex;
@@ -23,16 +24,22 @@
           font-size: 50px;
           margin: 0px;
           font-weight: 700;
+          color: var(--texto)
         }
 
         h4 {
           margin: 0px;
           font-weight: 400;
           font-size: 20px;
+          color: var(--texto)
         }
       }
     }
   }
+}
+
+.titulo_lista_comics{
+  color: var(--texto)
 }
 
 @media screen and (max-width: 800px) {

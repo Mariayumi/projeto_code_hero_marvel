@@ -1,5 +1,5 @@
 .navegador {
-  background-color: var(--white);
+  background-color: var(--sub-background);
   padding: 24px;
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@
     width: 10%;
     min-height: 30px;
     min-width: 200px;
-    background-image: url(../../assets/objective.light.svg);
+    background-image: var(--logo-inteira);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -22,7 +22,7 @@
   .info_usuario {
     display: flex;
     align-items: center;
-    color: var(--dark-smoke);
+    color: var(--texto);
     gap: 8px;
 
     h2 {
@@ -41,7 +41,8 @@
   .sigla_usuario {
     width: 32px;
     height: 32px;
-    background-color: var(--dark-snow);
+    background-color: var(--background);
+    color: var(--texto);
     font-size: 15px;
     font-weight: 700;
     border-radius: 4px;
@@ -50,6 +51,88 @@
     align-items: center;
     margin-left: 16px;
   }
+}
+
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; 
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  width: 60px; 
+  height: 30px;
+  border-radius: 15px; 
+  margin: 0;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in-out;
+}
+
+.toggle-inner::before, 
+.toggle-inner::after {
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: var(--texto);
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.toggle-inner::before {
+  content: "🌞"; 
+  padding-left: 10px;
+  background-color: var(--dark-blue); 
+  color: var(--white);
+}
+
+.toggle-inner::after {
+  content: "🌙"; 
+  padding-right: 10px;
+  background-color: var(--smoke); 
+  color: var(--white);
+  text-align: right;
+}
+
+.toggle-switch {
+  display: block;
+  width: 24px; 
+  height: 24px;
+  margin: 3px;
+  background: var(--white);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 30px; 
+  border: 1px solid var(--smoke);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-inner {
+  margin-left: 0; 
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-switch {
+  right: 0px; 
+  border-color: var(--dark-smoke);
 }
 
 @media (max-width: 800px) {
@@ -72,7 +155,7 @@
 
 @media (max-width: 500px) {
     .logo_navegador{
-        background-image: url(../../assets/favicon.svg);
+        background-image: var(--logo-comprimida);
         min-width: 50px;
     }
 }

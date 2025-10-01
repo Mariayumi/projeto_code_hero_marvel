@@ -13,13 +13,13 @@
 }
 
 .modal-container {
-  background-color: var(--white);
+  background-color: var(--sub-background);
   border-radius: 8px;
   box-shadow: var(--shadow);
   position: relative;
   max-height: 90vh;
   overflow-y: auto;
-  color: var(--dark-smoke);
+  color: var(--texto);
   padding: 1rem;
 }
 
@@ -66,7 +66,7 @@
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  color: var(--dark-smoke);
+  color: var(--subtexto);
   line-height: 1;
   padding: 0;
 }

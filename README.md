@@ -1,76 +1,71 @@
-# React + TypeScript + Vite
+# Projeto Code Hero Marvel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é a resolução do teste técnico para a vaga de Front-End React. É uma aplicação desenvolvida com React e TypeScript, focada em consumir e apresentar dados da API pública da Marvel, demonstrando proficiência em desenvolvimento de interfaces ricas e no consumo de APIs externas.
 
-Currently, two official plugins are available:
+## 🔑 Principais Tecnologias e Implementações
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Front-End: React
+- Linguagem: TypeScript
+- Consumo da API Marvel: Utilização da biblioteca MD5 para a geração das hashes de autenticação e requisições seguras à API.
+- Gerenciamento de Rotas: Implementação de navegação entre diferentes visualizações da aplicação.
 
-## React Compiler
+## 💡 Funcionalidades Desenvolvidas
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+A aplicação oferece uma experiência de navegação completa dentro do universo Marvel, utilizando as seguintes rotas da API:
 
-Note: This will impact Vite dev & build performances.
+- Listagem de Personagens (/characters): Exibe uma lista de heróis e vilões, permitindo a navegação e busca.
+- Detalhe do Personagem (/characters/{id}): Visualização completa, mostrando informações específicas de um herói selecionado.
+- Listagem de Quadrinhos por Personagem (/comics): Apresenta a coleção de HQs associadas ao personagem visualizado, integrando as informações de forma dinâmica.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📂 Estrutura de Pastas (Arquitetura)
+```
+.
+├── App.tsx
+├── assets
+├── components
+│   ├── ComicLista
+│   ├── Input
+│   ├── Modal
+│   ├── Navbar
+│   ├── Paginacao
+│   └── Tabela
+├── context
+│   ├── ThemeContext.ts
+│   └── ThemeProvider.tsx
+├── index.css
+├── layout
+├── main.tsx
+├── pages
+│   ├── descricao
+│   └── home
+├── routes
+│   ├── api.ts
+│   ├── comics.ts
+│   └── personagens.ts
+├── services
+│   └── auth.ts
+├── types
+└── utils
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# 🚀 Como Rodar o Projeto Localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Para iniciar a aplicação em seu ambiente, siga os passos simples abaixo. Certifique-se de ter o Node.js e o npm/yarn instalados.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Instalação das Dependências:
+
 ```
-# projeto_code_hero_marvel
+npm install
+# ou
+# yarn install
+```
+
+- Inicialização da Aplicação:
+
+```
+npm start
+# ou
+# yarn start
+```
+
+

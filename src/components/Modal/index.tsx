@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './Modal.css'; 
 import type { ModalProps } from '../../types/components/IModal';
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children, size = 'md' }) => {
+export default function Modal({ isOpen, onClose, title, children, size = 'md' }: ModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
 
   const handleOverlayClick = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -51,5 +51,3 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children, size = 
     document.body 
   );
 };
-
-export default Modal;

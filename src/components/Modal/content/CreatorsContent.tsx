@@ -1,7 +1,6 @@
-import React from 'react';
 import type { CreatorsContentProps } from '../../../types/components/IModal';
 
-const CreatorsContent: React.FC<CreatorsContentProps> = ({ creators }) => {
+export default function CreatorsContent({ creators }: CreatorsContentProps){
   if (!creators || creators.length === 0) return <p>Nenhum criador encontrado.</p>;
 
   return (
@@ -18,4 +17,3 @@ const CreatorsContent: React.FC<CreatorsContentProps> = ({ creators }) => {
   );
 };
 
-export default CreatorsContent;

@@ -79,7 +79,6 @@ export default function Descricao() {
     [id]
   );
 
-
   useEffect(() => {
     setPaginaAtual(1);
   }, [id]);
@@ -121,7 +120,7 @@ export default function Descricao() {
             )}
 
             <div>
-              <h2>Comics relacionados</h2>
+              <h2 className="titulo_lista_comics">Comics relacionados</h2>
 
               <ComicsList
                 comics={Comics?.results || []}

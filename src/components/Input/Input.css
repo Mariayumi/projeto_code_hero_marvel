@@ -6,11 +6,11 @@
   .label_input {
     font-weight: 700;
     font-size: 16px;
-    color: var(--dark-smoke);
+    color: var(--texto);
   }
 
   .corpo_input {
-    background-color: var(--white);
+    background-color: var(--sub-background);
     border: 1px solid var(--dark-snow);
     border-radius: 4px;
     display: flex;
@@ -25,7 +25,7 @@
 
   .corpo_input:focus-whithin {
     transition: 0.3s;
-    border: 1px solid var(--dark-smoke)
+    border: 1px solid var(--texto)
   }
 
   .icone_input {
@@ -40,9 +40,10 @@
   border: none;
   outline: none;
   font-family: PT Sans, sans-serif;
+  background-color: transparent;
 
   font-size: 14px;
-  color: var(--dark-smoke);
+  color: var(--texto);
 
   &::placeholder {
     color: var(--smoke);
